@@ -1,1 +1,2 @@
-<h2>Contact us</h2>
+<x-header/>
+<h2>Contact Rono</h2>

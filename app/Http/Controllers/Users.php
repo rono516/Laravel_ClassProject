@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class Users extends Controller
 {
-    public function index($user){
-        return ['name'=>"collins", 'age'=>"27"];
+    function viewLoad(){
+        return view('about');
     }
 }

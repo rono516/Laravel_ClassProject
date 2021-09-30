@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Users;
+use App\Http\Controllers\Users;//import our controller
 
 /*
 |--------------------------------------------------------------------------
@@ -23,10 +23,11 @@ Route::get('/', function () {
 Route::get('/about', function (){
     return view('about');
 });
-/*Route::get('/contact', function(){
+Route::get('contact',function(){
     return view('contact');
-});*/
-Route::view('contact', 'contact');
+});
+//Route::view('contact', 'contact');
 
 //using the controller//in Http//Controllers//Users
-Route::get('users/{user}',[Users::class,'index']);
+Route::get('users/{user}',[Users::class,'viewLoad']);
+Route::view('users', 'users');
